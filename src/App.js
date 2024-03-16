@@ -43,7 +43,7 @@ function App() {
       return newTasks;
     })
   }
-  const numberComplete = tasks.filter(t => t.done).length;
+  const numberComplete = tasks && tasks.length && tasks.filter(t => t.done).length;
   const numberTotal = tasks.length;
 
   function getMessage(){
